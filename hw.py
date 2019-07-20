@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jul 19 12:07:05 2019
-
-@author: translucky
-"""
-
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -30,6 +23,7 @@ def lighten(a):
         for x in range(c):
             if a[y,x]==255:
                 a[y,x]=255
+                print("(",x,",",y,")",":",True)
             else:
                 a[y,x]*=1.1
     plt.imshow(a,cmap='gray')
